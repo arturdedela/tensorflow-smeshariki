@@ -17,7 +17,6 @@ def load_data_from_dir(dir_path):
 
     for path in images_paths:
         img: Image.Image = Image.open(path)
-        img = img.resize((200, 200))
         img = np.asarray(img)
 
         parts = str(path).split(os.path.sep)
